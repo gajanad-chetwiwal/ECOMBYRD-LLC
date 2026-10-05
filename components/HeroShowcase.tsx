@@ -12,7 +12,7 @@ function BarsSlide() {
       <div className="flex items-center justify-between">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
-            Blended ROAS · Live
+            Blended ROAS · Example
           </p>
           <p className="mt-1.5 font-display text-4xl font-bold tracking-tight text-cream">
             4.6<span className="text-volt">x</span>
@@ -89,7 +89,7 @@ function MarginSlide() {
       <div className="flex items-center justify-between">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
-            Contribution Margin · Tracked
+            Contribution Margin · Example
           </p>
           <p className="mt-1.5 font-display text-4xl font-bold tracking-tight text-cream">
             $52<span className="text-volt">k</span>
@@ -163,8 +163,8 @@ export default function HeroShowcase() {
     <div className="relative mx-auto w-full max-w-[480px]">
       {/* floating glass chips */}
       <div className="animate-float-slow glass absolute -top-5 -right-2 z-10 hidden rounded-2xl px-4 py-3 sm:block">
-        <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Best return</p>
-        <p className="mt-0.5 font-display text-lg font-bold text-volt">9.42x</p>
+        <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Growth audit</p>
+        <p className="mt-0.5 font-display text-lg font-bold text-volt">Free</p>
       </div>
       <div
         className="animate-float-slow glass absolute -bottom-6 -left-3 z-10 hidden rounded-2xl px-4 py-3 sm:block"
@@ -183,7 +183,7 @@ export default function HeroShowcase() {
             <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
           </div>
           <p className="font-mono text-[10px] uppercase tracking-widest text-muted/70">
-            ecombyrd · growth os
+            ecombyrd · sample view
           </p>
         </div>
         <div className="slide-stack min-h-[280px] sm:min-h-[300px]">

@@ -36,7 +36,7 @@ export default function TermsPage() {
         <div>
           <h2 className="font-display text-xl font-semibold text-cream">3. No performance guarantee</h2>
           <p className="mt-3">
-            Results shown on this site reflect specific historical engagements. Advertising
+            Figures shown on this site are illustrative examples, not client results. Advertising
             performance depends on many factors outside any agency&apos;s control — market
             conditions, product economics, platform changes — and past results do not guarantee
             future outcomes.

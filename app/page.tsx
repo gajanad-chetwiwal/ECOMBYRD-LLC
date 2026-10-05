@@ -2,22 +2,19 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
 import Marquee from "@/components/Marquee";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import CTASection from "@/components/CTASection";
 import LeadMagnet from "@/components/LeadMagnet";
 import HeroShowcase from "@/components/HeroShowcase";
 import GhostType from "@/components/GhostType";
 import {
   heroStats,
+  foundingPerks,
   niches,
   painPoints,
   services,
   aiFeatures,
-  caseStudies,
-  resultsStats,
   processSteps,
   comparison,
-  testimonials,
   marginMath,
 } from "@/lib/data";
 
@@ -44,8 +41,6 @@ function SectionHeading({
 }
 
 export default function Home() {
-  const featured = caseStudies.filter((s) => s.featured);
-
   return (
     <>
       {/* ================= HERO ================= */}
@@ -86,10 +81,10 @@ export default function Home() {
                 Book a Free Growth Audit
               </Link>
               <Link
-                href="/case-studies"
+                href="/#process"
                 className="rounded-full border border-line px-8 py-4 text-center text-sm font-semibold text-cream transition-colors duration-300 hover:border-volt/50 hover:text-volt"
               >
-                See the Numbers →
+                How We Work →
               </Link>
             </div>
               </Reveal>
@@ -242,45 +237,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= CASE STUDIES ================= */}
+      {/* ================= FOUNDING PARTNERS ================= */}
       <section className="border-t border-line bg-surface/40">
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <SectionHeading
-              eyebrow="Documented Results"
-              title="Numbers that survived an audit."
-              sub="Real accounts, real timelines, real returns — anonymized to protect client competitive data."
-            />
-            <Reveal delay={150}>
-              <Link
-                href="/case-studies"
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-volt transition-opacity hover:opacity-70"
-              >
-                All case studies →
-              </Link>
-            </Reveal>
-          </div>
+          <SectionHeading
+            eyebrow="Founding Partners"
+            title="New agency. No borrowed results."
+            sub="Ecom Byrd launched in 2026. We're taking on a small group of founding partner brands — and earning our case studies with you, not inventing them."
+          />
           <div className="mt-14 grid gap-5 lg:grid-cols-3">
-            {featured.map((study, i) => (
-              <Reveal key={study.slug} delay={i * 100}>
-                <CaseStudyCard study={study} />
+            {foundingPerks.map((perk, i) => (
+              <Reveal key={perk.title} delay={i * 100}>
+                <div className="card-hover h-full rounded-2xl border border-line bg-card p-7">
+                  <span className="font-mono text-xs text-volt">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="mt-4 font-display text-lg font-semibold tracking-tight text-cream">
+                    {perk.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{perk.body}</p>
+                </div>
               </Reveal>
             ))}
           </div>
-          <Reveal delay={150}>
-            <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3">
-              {resultsStats.map((stat) => (
-                <div key={stat.label} className="bg-surface/80 p-7 text-center">
-                  <div className="font-display text-3xl font-bold tracking-tight text-volt">
-                    <Counter value={stat.value} suffix={stat.suffix} decimals={stat.decimals} />
-                  </div>
-                  <div className="mt-2 font-mono text-[11px] uppercase tracking-widest text-muted">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
         </div>
       </section>
 
@@ -424,35 +403,6 @@ export default function Home() {
 
       {/* ================= LEAD MAGNET ================= */}
       <LeadMagnet />
-
-      {/* ================= TESTIMONIALS ================= */}
-      <section className="border-t border-line">
-        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
-          <SectionHeading
-            eyebrow="Client Voices"
-            title="What partners say when the numbers are real."
-            center
-          />
-          <div className="mt-14 grid gap-5 sm:grid-cols-2">
-            {testimonials.map((t, i) => (
-              <Reveal key={t.company} delay={(i % 2) * 100}>
-                <figure className="card-hover flex h-full flex-col rounded-2xl border border-line bg-card p-7 sm:p-9">
-                  <div className="font-display text-4xl leading-none text-volt">&ldquo;</div>
-                  <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-cream/90 sm:text-base">
-                    {t.quote}
-                  </blockquote>
-                  <figcaption className="mt-6 border-t border-line pt-5">
-                    <div className="font-display text-sm font-semibold text-cream">{t.author}</div>
-                    <div className="mt-1 font-mono text-[11px] uppercase tracking-widest text-muted">
-                      {t.company}
-                    </div>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ================= CTA ================= */}
       <div className="border-t border-line">

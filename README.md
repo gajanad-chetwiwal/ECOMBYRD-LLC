@@ -6,9 +6,8 @@ Fully static, mobile-first, dark premium design.
 
 ## Pages
 
-- `/` — full landing page (hero, stats, pain points, services, AI edge, case studies, process, comparison, testimonials, CTA)
+- `/` — full landing page (hero, stats, pain points, services, AI edge, founding partners, process, comparison, CTA)
 - `/services` — six service disciplines + AI layer
-- `/case-studies` — 8 documented results
 - `/about` — founder story, differentiators, operating principles
 - `/contact` — growth-audit form + FAQ
 - `/privacy`, `/terms` — legal
@@ -41,6 +40,6 @@ subsequent submissions flow through. No backend or API keys required.
 
 ## Content
 
-All copy, stats, case studies, testimonials and contact details live in one
+All copy, stats and contact details live in one
 file: [`lib/data.ts`](lib/data.ts). Edit that file to change any content on the
 site — no component changes needed.

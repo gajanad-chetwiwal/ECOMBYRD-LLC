@@ -6,7 +6,7 @@ import { values, differentiators, site } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "ECOMBYRD LLC — founded by Marjorie Byrd. Operators who scale their own eCommerce brands, now scaling yours with AI-powered, profit-first growth systems.",
+    "ECOMBYRD LLC — founded by Marjorie Byrd. A founder-led growth partner scaling eCommerce brands with AI-powered, profit-first systems.",
 };
 
 export default function AboutPage() {
@@ -22,9 +22,9 @@ export default function AboutPage() {
               Operators first. <span className="text-volt">Agency second.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-              {site.legalName} doesn&apos;t just run ads for eCommerce brands — we buy,
-              build and scale our own. Every strategy we sell was tested with our own
-              money first. That&apos;s not a tagline; it&apos;s the business model.
+              {site.legalName} is a new, founder-led growth partner for eCommerce
+              brands, founded in Tyrone, Georgia in 2026. Small by design — so the
+              person who audits your account is the one who runs it.
             </p>
           </Reveal>
         </div>
@@ -55,20 +55,20 @@ export default function AboutPage() {
             </div>
             <div className="space-y-5 text-sm leading-relaxed text-muted sm:text-base">
               <p>
-                Marjorie Byrd founded {site.legalName} on a simple frustration: agencies
-                that report numbers no one can find in the P&amp;L. After years of
-                building and scaling eCommerce brands — and paying for every ad out of
-                pocket — Marjorie built the operation every founder wishes they could hire.
+                Marjorie Byrd founded {site.legalName} in 2026 on a simple frustration:
+                agencies that report numbers no one can find in the P&amp;L. Ecom Byrd is
+                built to be the opposite — margin first, written reporting, and no
+                long-term contracts.
               </p>
               <p>
-                We run our own eCommerce brands, which means every bidding strategy,
-                creative framework and retention flow gets proven on our own revenue
-                before it ever touches a client account. When the market shifts, we feel
-                it in our own margins first — and adapt your account before it shows in
-                yours.
+                We&apos;re new, and we say so. Instead of a wall of borrowed logos, we
+                offer a free audit with written findings, month-to-month terms, and the
+                founder personally on every account. Our first case studies will be
+                written with our founding partner brands — with their permission and
+                their real numbers.
               </p>
               <p>
-                Today, that operator DNA is fused with a proprietary AI layer that
+                That operator mindset is paired with a proprietary AI layer that
                 watches every client account around the clock. The philosophy hasn&apos;t
                 changed: <span className="text-cream">profit is the only metric that
                 can&apos;t be faked.</span>

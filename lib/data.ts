@@ -13,17 +13,16 @@ export const site = {
 
 export const navLinks = [
   { label: "Services", href: "/services" },
-  { label: "Case Studies", href: "/case-studies" },
   { label: "Process", href: "/#process" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const heroStats = [
-  { value: 480, prefix: "$", suffix: "k+", label: "Ad spend managed", decimals: 0 },
-  { value: 4.6, prefix: "", suffix: "x", label: "Avg. blended ROAS", decimals: 1 },
-  { value: 12, prefix: "", suffix: "+", label: "Brands under management", decimals: 0 },
-  { value: 9.4, prefix: "", suffix: "x", label: "Best documented ROAS", decimals: 1 },
+  { value: 6, prefix: "", suffix: "", label: "Channels under one roof", decimals: 0 },
+  { value: 7, prefix: "", suffix: " days", label: "Audit turnaround", decimals: 0 },
+  { value: 0, prefix: "$", suffix: "", label: "Cost of the growth audit", decimals: 0 },
+  { value: 1, prefix: "", suffix: " day", label: "Reply time (business)", decimals: 0 },
 ];
 
 export const niches = [
@@ -102,7 +101,7 @@ export const services = [
     bullets: [
       "AI-scored creative testing sprints",
       "Full-funnel retargeting mapped to LTV",
-      "UGC & static frameworks proven on our own portfolio brands",
+      "UGC & static creative frameworks built for testing at speed",
     ],
   },
   {
@@ -126,7 +125,7 @@ export const services = [
     bullets: [
       "Core flow buildouts (welcome, abandon, post-purchase, win-back)",
       "AI-driven send-time & segment optimization",
-      "30–40% of revenue moved off paid channels",
+      "Goal: 30–40% of revenue from owned channels",
     ],
   },
   {
@@ -154,7 +153,7 @@ export const aiFeatures = [
   },
   {
     title: "AI Creative Intelligence",
-    body: "Every hook, angle and asset scored against historical winners across our portfolio. We know what to test next before your competitors finish guessing.",
+    body: "Every hook, angle and asset scored against proven direct-response patterns. We know what to test next before your competitors finish guessing.",
   },
   {
     title: "Profit-First Attribution",
@@ -162,123 +161,26 @@ export const aiFeatures = [
   },
 ];
 
-export type CaseStudy = {
-  slug: string;
-  client: string;
-  niche: string;
-  region: string;
-  period: string;
-  roas: number;
-  revenue: string;
-  summary: string;
-  featured?: boolean;
-};
-
-export const caseStudies: CaseStudy[] = [
+export const foundingPerks = [
   {
-    slug: "electric-mobility",
-    client: "Electric Mobility Brand",
-    niche: "E-Scooters & Skateboards",
-    region: "US & UK",
-    period: "10 weeks",
-    roas: 4.55,
-    revenue: "$86k",
-    summary:
-      "Rebuilt Search and PMax around contribution margin across two storefronts, layered AI budget pacing on top, and doubled non-branded spend while holding efficiency week over week.",
-    featured: true,
+    title: "The founder on your account",
+    body: "No account-manager layer. The person who audits your account is the person who rebuilds it and writes your weekly report.",
   },
   {
-    slug: "automotive-accessories",
-    client: "Automotive Accessories Brand",
-    niche: "Automotive",
-    region: "US",
-    period: "8 weeks",
-    roas: 9.42,
-    revenue: "$41k",
-    summary:
-      "Found the entire margin story hiding in a broken shopping feed. Rebuilt titles and attributes, restructured by margin tier, and let the AI bidding layer do the rest. Our best documented return so far.",
-    featured: true,
+    title: "A deliberately small roster",
+    body: "We cap how many brands we take on, so every account gets daily attention instead of a slot in a rotation.",
   },
   {
-    slug: "german-jewelry",
-    client: "European Jewelry Brand",
-    niche: "Jewelry & Fashion",
-    region: "Germany",
-    period: "30 days",
-    roas: 6.8,
-    revenue: "€22k",
-    summary:
-      "A holiday-window sprint: predictive budget models identified exactly which products could absorb aggressive spend, and we scaled into the season instead of reacting to it.",
-    featured: true,
+    title: "Nothing to lose on the audit",
+    body: "The growth audit is free and the findings are yours in writing — whether we end up working together or not.",
   },
-  {
-    slug: "home-decor",
-    client: "Home Decor Brand",
-    niche: "Home & Living",
-    region: "US",
-    period: "2 months",
-    roas: 5.12,
-    revenue: "$34k",
-    summary:
-      "High-SKU catalog with zero structure. We rebuilt the feed, sculpted queries away from branded terms, and turned a break-even account into the most profitable channel in the business.",
-  },
-  {
-    slug: "sleep-wellness",
-    client: "Sleep & Wellness Brand",
-    niche: "Health & Wellness",
-    region: "US",
-    period: "6 weeks",
-    roas: 3.9,
-    revenue: "$18k",
-    summary:
-      "A compliance-heavy category everyone else refused to touch. Careful policy-safe structures plus retention flows moved a meaningful share of revenue off paid entirely.",
-  },
-  {
-    slug: "kids-toys",
-    client: "Kids & Toys Brand",
-    niche: "Kids & Toys",
-    region: "US",
-    period: "7 weeks",
-    roas: 4.7,
-    revenue: "$12k",
-    summary:
-      "A seasonal sprint from a standing start. AI creative scoring picked the winning angles in week one; we spent the remaining six scaling them.",
-  },
-  {
-    slug: "health-brand",
-    client: "Health & Wellness Brand",
-    niche: "Health & Wellness",
-    region: "US",
-    period: "8 weeks",
-    roas: 3.13,
-    revenue: "$15.5k",
-    summary:
-      "Rebuilt measurement first — the old account was optimizing to a conversion event that double-counted. Real numbers, then real scale.",
-  },
-  {
-    slug: "in-house-brand",
-    client: "In-House Portfolio Brand",
-    niche: "eCommerce",
-    region: "US",
-    period: "3 months",
-    roas: 4.64,
-    revenue: "$52k",
-    summary:
-      "One of our own. Every strategy we sell gets tested here first, with our own money — three months of compounding proof that the playbook works.",
-  },
-];
-
-export const resultsStats = [
-  { value: 5.2, suffix: "x", label: "Average ROAS across engagements", decimals: 1 },
-  { value: 9.42, suffix: "x", label: "Best documented single-account return", decimals: 2 },
-  { value: 4, suffix: "", label: "Countries actively running accounts", decimals: 0 },
 ];
 
 export const processSteps = [
   {
     phase: "Week 1",
     title: "Diagnose",
-    body: "We audit the account, the measurement stack and the unit economics. Most engagements uncover broken tracking or wasted spend in the first seven days — you get the findings in writing either way.",
+    body: "We audit the account, the measurement stack and the unit economics. Broken tracking and wasted spend usually surface in the first seven days — you get the findings in writing either way.",
   },
   {
     phase: "Week 1–2",
@@ -299,8 +201,8 @@ export const processSteps = [
 
 export const differentiators = [
   {
-    title: "Operators, not account managers",
-    body: "Ecom Byrd owns and scales its own portfolio of eCommerce brands. Every strategy we run on your account was tested with our own money first.",
+    title: "Founder-led, never handed off",
+    body: "We keep a deliberately small roster, so the founder works directly on every account — from the first audit call to the weekly report.",
   },
   {
     title: "AI leverage, human judgment",
@@ -327,7 +229,7 @@ export const comparison = {
     { label: "Who runs your account", typical: "Junior handed off after sales", us: "The strategist who audited it" },
     { label: "Measurement", typical: "Assumed to be correct", us: "Audited and rebuilt first" },
     { label: "Monitoring", typical: "Checked at the weekly call", us: "AI systems, 24/7" },
-    { label: "Testing", typical: "Ad-hoc, at your expense", us: "Fixed cadence, proven on our brands" },
+    { label: "Testing", typical: "Ad-hoc, at your expense", us: "Fixed cadence, small budgets first" },
     { label: "Reporting", typical: "A dashboard link", us: "Written weekly analysis" },
     { label: "Scaling decisions", typical: "Raise budgets and hope", us: "Gated on an efficiency floor" },
   ],
@@ -348,7 +250,7 @@ export const values = [
   },
   {
     title: "Test before you believe",
-    body: "Opinions are hypotheses. Every strategy earns its place through data — usually on our own portfolio brands before it ever touches yours.",
+    body: "Opinions are hypotheses. Every strategy earns its place through data — tested on small budgets before it earns a bigger one.",
   },
   {
     title: "Build the asset",
@@ -357,33 +259,6 @@ export const values = [
   {
     title: "Be worth keeping",
     body: "With no lock-in, we have to re-earn the engagement every single month. That pressure is the point.",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Every previous agency reported a ROAS that never showed up in our P&L. Ecom Byrd rebuilt our tracking in week one, told us the real number was half of what we thought, and then actually improved it. That honesty is why we're still here.",
-    author: "Founder",
-    company: "Electric Mobility Brand, UK",
-  },
-  {
-    quote:
-      "Paid hadn't moved in months. They found a broken conversion event our old agency had been optimizing to the whole time. Eight weeks in, non-branded revenue is up 60% and I can finally read our reports without a translator.",
-    author: "Operations Director",
-    company: "Home & Kitchen Brand, US",
-  },
-  {
-    quote:
-      "We came in six weeks before the holiday window. Their forecasting models told us exactly which products could take aggressive budget — we finished the season at close to 7x on cold traffic. I've never seen scaling look that calm.",
-    author: "eCommerce Manager",
-    company: "Jewelry Brand, Germany",
-  },
-  {
-    quote:
-      "Our category is a compliance nightmare and every agency before them told us Google was impossible. They built policy-safe structures, started shifting revenue to email, and made the whole machine boring — in the best possible way.",
-    author: "Managing Partner",
-    company: "Health & Wellness Brand, US",
   },
 ];
 
@@ -399,6 +274,10 @@ export const faqs = [
   {
     q: "How fast will I see results?",
     a: "Most brands see measurable improvement in 30–60 days. Weeks 1–4 are diagnosis and rebuilding — rushing spend onto broken tracking is how agencies burn your budget. Give it a full two months to judge fairly.",
+  },
+  {
+    q: "You're a new agency — why should we trust you?",
+    a: "Fair question. ECOMBYRD LLC was founded in 2026, so we don't have a wall of logos yet — and we won't invent one. What we offer instead: a free audit with written findings you keep, month-to-month terms, and the founder personally on your account. If the audit doesn't show you something useful, you've lost nothing.",
   },
   {
     q: "Do you require long-term contracts?",
